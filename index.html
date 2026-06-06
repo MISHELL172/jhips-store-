@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jhip's store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <input type="radio" name="nav-tabs" id="tab-inicio" checked>
+    <input type="radio" name="nav-tabs" id="tab-nosotros">
+    <input type="radio" name="nav-tabs" id="tab-hombres">
+    <input type="radio" name="nav-tabs" id="tab-mujeres">
+    <input type="radio" name="nav-tabs" id="tab-todos">
+    <input type="radio" name="nav-tabs" id="tab-tallas">
+    <input type="radio" name="nav-tabs" id="tab-ofertas">
+
+    <input type="radio" name="camiseta-detalle" id="det-ninguno" checked>
+    <input type="radio" name="camiseta-detalle" id="det-amarilla">
+    <input type="radio" name="camiseta-detalle" id="det-azul">
+    <input type="radio" name="camiseta-detalle" id="det-blanca">
+    <input type="radio" name="camiseta-detalle" id="det-negra">
+
+    <input type="radio" name="camiseta-detalle" id="det-m-amarilla">
+    <input type="radio" name="camiseta-detalle" id="det-m-azul">
+    <input type="radio" name="camiseta-detalle" id="det-m-blanca">
+    <input type="radio" name="camiseta-detalle" id="det-m-negra">
+
+    <input type="radio" name="camiseta-detalle" id="det-of-amarilla">
+    <input type="radio" name="camiseta-detalle" id="det-of-azul">
+    <input type="radio" name="camiseta-detalle" id="det-of-blanca">
+    <input type="radio" name="camiseta-detalle" id="det-of-negra">
+
+    <header class="main-header">
+        <div class="logo">Jhip's <span>store</span></div>
+        <nav class="nav-menu">
+            <label for="tab-inicio" class="nav-item">Inicio</label>
+            <label for="tab-nosotros" class="nav-item">Nosotros</label>
+            <label for="tab-hombres" class="nav-item">Hombres</label>
+            <label for="tab-mujeres" class="nav-item">Mujeres</label>
+            <label for="tab-todos" class="nav-item">Todos</label>
+            <label for="tab-tallas" class="nav-item">Tallas</label>
+            <label for="tab-ofertas" class="nav-item btn-ofertas-nav"><i class="fas fa-tag"></i> Ofertas</label>
+        </nav>
+    </header>
+
+    <section class="modal-detalles-interactivo">
+        <div class="modal-content">
+            <label for="det-ninguno" class="close-btn"><i class="fas fa-times"></i> Cerrar Vista</label>
+            
+            <div class="contenedor-galeria-modal item-amarilla">
+                <h3>Detalles: Amarilla Titular (Hombre)</h3>
+                <div class="grid-imagenes-detalles">
+                    <div class="card-detalle"><img src="imagenes/escudo_amarillo.jpg" alt="Escudo Amarillo"><h4>Escudo</h4></div>
+                    <div class="card-detalle"><img src="imagenes/espalda_amarilla.jpg" alt="Espalda Amarillo"><h4>Espalda</h4></div>
+                    <div class="card-detalle"><img src="imagenes/parte_baja_amarilla.jpg" alt="Parte Baja Amarilla"><h4>Parte Baja</h4></div>
+                </div>
+            </div>
+            <div class="contenedor-galeria-modal item-azul">
+                <h3>Detalles: Azul Alterna (Hombre)</h3>
+                <div class="grid-imagenes-detalles">
+                    <div class="card-detalle"><img src="imagenes/escudo_azul.jpg" alt="Escudo Azul"><h4>Escudo</h4></div>
+                    <div class="card-detalle"><img src="imagenes/espalda_azul.jpg" alt="Espalda Azul"><h4>Espalda</h4></div>
+                    <div class="card-detalle"><img src="imagenes/parte_baja_azul.jpg" alt="Parte Baja Azul"><h4>Parte Baja</h4></div>
+                </div>
+            </div>
+            <div class="contenedor-galeria-modal item-blanca">
+                <h3>Detalles: Blanca Especial (Hombre)</h3>
+                <div class="grid-imagenes-detalles">
+                    <div class="card-detalle"><img src="imagenes/escudo_blanca.jpg" alt="Escudo Blanca"><h4>Escudo</h4></div>
+                    <div class="card-detalle"><img src="imagenes/espalda_blanca.jpg" alt="Espalda Blanca"><h4>Espalda</h4></div>
+                    <div class="card-detalle"><img src="imagenes/parte_baja_blanca.jpg" alt="Parte Baja Blanca"><h4>Parte Baja</h4></div>
+                </div>
+            </div>
+            <div class="contenedor-galeria-modal item-negra">
+                <h3>Detalles: Negra Exclusiva (Hombre)</h3>
+                <div class="grid-imagenes-detalles">
+                    <div class="card-detalle"><img src="imagenes/escudo_negro.jpg" alt="Escudo Negro"><h4>Escudo</h4></div>
+                    <div class="card-detalle"><img src="imagenes/espalda_negra.jpg" alt="Espalda Negro"><h4>Espalda</h4></div>
+                    <div class="card-detalle"><img src="imagenes/parte_baja_negro.jpg" alt="Parte Baja Negra"><h4>Parte Baja</h4></div>
+                </div>
+            </div>
+
+            <div class="contenedor-galeria-modal item-m-amarilla">
+                <h3>Detalles: Amarilla Titular (Mujer)</h3>
+                <div class="grid-imagenes-detalles">
+                    <div class="card-detalle"><img src="imagenes/escudo_amarillo_mujer.jpg" alt="Escudo Amarillo Mujer"><h4>Escudo</h4></div>
+                    <div class="card-detalle"><img src="imagenes/espalda_amarilla_mujer.jpg" alt="Espalda Amarilla Mujer"><h4>Espalda</h4></div>
+                    <div class="card-detalle"><img src="imagenes/parte_baja_amarilla_mujer.jpg" alt="Parte Baja Amarilla Mujer"><h4>Parte Baja</h4></div>
+                </div>
+            </div>
+            <div class="contenedor-galeria-modal item-m-azul">
+                <h3>Detalles: Azul Alterna (Mujer)</h3>
+                <div class="grid-imagenes-detalles">
+                    <div class="card-detalle"><img src="imagenes/escudo_azul_mujer.jpg" alt="Escudo Azul Mujer"><h4>Escudo</h4></div>
+                    <div class="card-detalle"><img src="imagenes/espalda_azul_mujer.jpg" alt="Espalda Azul Mujer"><h4>Espalda</h4></div>
+                    <div class="card-detalle"><img src="imagenes/parte_baja_azul_mujer.jpg" alt="Parte Baja Azul Mujer"><h4>Parte Baja</h4></div>
+                </div>
+            </div>
+            <div class="contenedor-galeria-modal item-m-blanca">
+                <h3>Detalles: Blanca Especial (Mujer)</h3>
+                <div class="grid-imagenes-detalles">
+                    <div class="card-detalle"><img src="imagenes/escudo_blanca_mujer.jpg" alt="Escudo Blanca Mujer"><h4>Escudo</h4></div>
+                    <div class="card-detalle"><img src="imagenes/espalda_blanca_mujer.jpg" alt="Espalda Blanca Mujer"><h4>Espalda</h4></div>
+                    <div class="card-detalle"><img src="imagenes/parte_baja_blanca_mujer.jpg" alt="Parte Baja Blanca Mujer"><h4>Parte Baja</h4></div>
+                </div>
+            </div>
+            <div class="contenedor-galeria-modal item-m-negra">
+                <h3>Detalles: Negra Exclusiva (Mujer)</h3>
+                <div class="grid-imagenes-detalles">
+                    <div class="card-detalle"><img src="imagenes/escudo_negro_mujer.jpg" alt="Escudo Negra Mujer"><h4>Escudo</h4></div>
+                    <div class="card-detalle"><img src="imagenes/espalda_negra_mujer.jpg" alt="Espalda Negra Mujer"><h4>Espalda</h4></div>
+                    <div class="card-detalle"><img src="imagenes/parte_baja_negro_mujer.jpg" alt="Parte Baja Negra Mujer"><h4>Parte Baja</h4></div>
+                </div>
+            </div>
+
+            <div class="contenedor-galeria-modal item-of-amarilla">
+                <h3>Pack de Oferta: Camisetas Amarillas</h3>
+                <div class="promo-badge-modal">Oferta a partir de 3 a 20 $ cada una</div>
+                <div class="grid-imagenes-detalles">
+                    <div class="card-detalle"><img src="imagenes/camiseta_amarilla.jpg" alt="Camiseta Amarilla 1"><h4>Unidad 1</h4></div>
+                    <div class="card-detalle"><img src="imagenes/camiseta_amarilla.jpg" alt="Camiseta Amarilla 2"><h4>Unidad 2</h4></div>
+                    <div class="card-detalle"><img src="imagenes/camiseta_amarilla.jpg" alt="Camiseta Amarilla 3"><h4>Unidad 3</h4></div>
+                </div>
+            </div>
+            <div class="contenedor-galeria-modal item-of-azul">
+                <h3>Pack de Oferta: Camisetas Azules</h3>
+                <div class="promo-badge-modal">Oferta a partir de 3 a 20 $ cada una</div>
+                <div class="grid-imagenes-detalles">
+                    <div class="card-detalle"><img src="imagenes/camiseta_azul.jpg" alt="Camiseta Azul 1"><h4>Unidad 1</h4></div>
+                    <div class="card-detalle"><img src="imagenes/camiseta_azul.jpg" alt="Camiseta Azul 2"><h4>Unidad 2</h4></div>
+                    <div class="card-detalle"><img src="imagenes/camiseta_azul.jpg" alt="Camiseta Azul 3"><h4>Unidad 3</h4></div>
+                </div>
+            </div>
+            <div class="contenedor-galeria-modal item-of-blanca">
+                <h3>Pack de Oferta: Camisetas Blancas</h3>
+                <div class="promo-badge-modal">Oferta a partir de 3 a 20 $ cada una</div>
+                <div class="grid-imagenes-detalles">
+                    <div class="card-detalle"><img src="imagenes/camiseta_blanca.jpg" alt="Camiseta Blanca 1"><h4>Unidad 1</h4></div>
+                    <div class="card-detalle"><img src="imagenes/camiseta_blanca.jpg" alt="Camiseta Blanca 2"><h4>Unidad 2</h4></div>
+                    <div class="card-detalle"><img src="imagenes/camiseta_blanca.jpg" alt="Camiseta Blanca 3"><h4>Unidad 3</h4></div>
+                </div>
+            </div>
+            <div class="contenedor-galeria-modal item-of-negra">
+                <h3>Pack de Oferta: Camisetas Negras</h3>
+                <div class="promo-badge-modal">Oferta a partir de 3 a 20 $ cada una</div>
+                <div class="grid-imagenes-detalles">
+                    <div class="card-detalle"><img src="imagenes/camiseta_negra.jpg" alt="Camiseta Negra 1"><h4>Unidad 1</h4></div>
+                    <div class="card-detalle"><img src="imagenes/camiseta_negra.jpg" alt="Camiseta Negra 2"><h4>Unidad 2</h4></div>
+                    <div class="card-detalle"><img src="imagenes/camiseta_negra.jpg" alt="Camiseta Negra 3"><h4>Unidad 3</h4></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="content-container">
+
+        <section class="content-section" id="sec-inicio">
+            <div class="hero-banner">
+                <div class="hero-content">
+                    <h1>LLEVA EN EL PECHO EL ORGULLO TRICOLOR</h1>
+                    <p>Edición Especial Mundial 2026. Diseños premium con tecnología de alta competencia.</p>
+                    <label for="tab-todos" class="btn-primary">Ver Colección</label>
+                </div>
+            </div>
+
+            <div class="video-container-central">
+                <h3>Siente la Experiencia</h3>
+                <div class="video-wrapper">
+                    <video autoplay loop muted playsinline controls>
+                        <source src="video/video oficial.mp4" type="video/mp4">
+                        Tu navegador no soporta la reproducción de videos.
+                    </video>
+                </div>
+            </div>
+
+            <div class="home-gallery-title">
+                <h3>Orgullo de Ecuador</h3>
+            </div>
+            <div class="home-gallery">
+                <label for="tab-hombres" class="gallery-card linkable-card">
+                    <div class="gallery-img-wrapper">
+                        <img src="imagenes/hombres.jpg" alt="Camisetas de Hombre">
+                    </div>
+                    <h4>camisetas de hombre</h4>
+                    <p class="hover-action-text">Click para ir a la sección <i class="fas fa-arrow-right"></i></p>
+                </label>
+
+                <label for="tab-mujeres" class="gallery-card linkable-card">
+                    <div class="gallery-img-wrapper">
+                        <img src="imagenes/mujeres.jpg" alt="Camisetas de Mujer">
+                    </div>
+                    <h4>camisetas de mujer</h4>
+                    <p class="hover-action-text">Click para ir a la sección <i class="fas fa-arrow-right"></i></p>
+                </label>
+
+                <label for="tab-todos" class="gallery-card linkable-card">
+                    <div class="gallery-img-wrapper">
+                        <img src="imagenes/todos_los_productos.jpg" alt="Todos los Productos">
+                    </div>
+                    <h4>todos los productos</h4>
+                    <p class="hover-action-text">Click para ir a la sección <i class="fas fa-arrow-right"></i></p>
+                </label>
+            </div>
+        </section>
+
+        <section class="content-section" id="sec-nosotros">
+            <h2>Bienvenidos a JHIP'S STORE</h2>
+            <div class="nosotros-texto-centralizado">
+                <p class="nosotros-subtitle">
+                    En JHIP'S STORE, no solo vendemos ropa; compartimos una pasión. Nacimos con el firme propósito de llevar la identidad, el esfuerzo y la garra de nuestra tierra a cada rincón, transformando esa energía en prendas premium de alta calidad.
+                </p>
+                
+                <div class="mision-container">
+                    <h3>Nuestra Misión</h3>
+                    <p>
+                        Brindar a nuestros clientes una experiencia única vestir prendas que reflejen su estilo y pasión. Nos comprometemos a mantener los más altos estándares de calidad, diseño e innovación en cada una de las colecciones que ponemos en tu pecho.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="video-centrado-nosotros">
+                <div class="video-card-nosotros">
+                    <h3>Nuestra Esencia</h3>
+                    <div class="video-wrapper-nosotros">
+                        <video loop muted playsinline controls>
+                            <source src="video/nosotros.mp4" type="video/mp4">
+                            Tu navegador no soporta este video.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section" id="sec-hombres">
+            <h2>Colección Hombres</h2>
+            <div class="product-grid grid-2x2">
+                <label for="det-amarilla" class="product-card clickable">
+                    <div class="badge">Oficial</div>
+                    <div class="product-img img-grande"><img src="imagenes/camiseta_amarilla.jpg" alt="Camiseta Amarilla"></div>
+                    <h3>Camiseta Titular Amarilla 2026</h3>
+                    <div class="product-price">25 $</div>
+                    <span class="view-more-text"><i class="fas fa-search-plus"></i> Ver Escudo y Espalda</span>
+                </label>
+                
+                <label for="det-azul" class="product-card clickable">
+                    <div class="badge">Alterna</div>
+                    <div class="product-img img-grande"><img src="imagenes/camiseta_azul.jpg" alt="Camiseta Azul"></div>
+                    <h3>Camiseta Alterna Azul 2026</h3>
+                    <div class="product-price">25 $</div>
+                    <span class="view-more-text"><i class="fas fa-search-plus"></i> Ver Escudo y Espalda</span>
+                </label>
+
+                <label for="det-blanca" class="product-card clickable">
+                    <div class="badge">Especial</div>
+                    <div class="product-img img-grande"><img src="imagenes/camiseta_blanca.jpg" alt="Camiseta Blanca"></div>
+                    <h3>Camiseta Especial Blanca 2026</h3>
+                    <div class="product-price">25 $</div>
+                    <span class="view-more-text"><i class="fas fa-search-plus"></i> Ver Escudo y Espalda</span>
+                </label>
+
+                <label for="det-negra" class="product-card clickable">
+                    <div class="badge">Exclusiva</div>
+                    <div class="product-img img-grande"><img src="imagenes/camiseta_negra.jpg" alt="Camiseta Negra"></div>
+                    <h3>Camiseta Alterna Negra 2026</h3>
+                    <div class="product-price">25 $</div>
+                    <span class="view-more-text"><i class="fas fa-search-plus"></i> Ver Escudo y Espalda</span>
+                </label>
+            </div>
+        </section>
+
+        <section class="content-section" id="sec-mujeres">
+            <h2>Colección Mujeres</h2>
+            <div class="product-grid grid-2x2">
+                <label for="det-m-amarilla" class="product-card clickable">
+                    <div class="badge badge-fem">Oficial Femenina</div>
+                    <div class="product-img img-grande"><img src="imagenes/camiseta_amarilla_mujer.jpg" alt="Camiseta Amarilla Mujer"></div>
+                    <h3>Camiseta Titular Amarilla 2026 (Mujer)</h3>
+                    <div class="product-price">25 $</div>
+                    <span class="view-more-text"><i class="fas fa-search-plus"></i> Ver Escudo y Espalda</span>
+                </label>
+                
+                <label for="det-m-azul" class="product-card clickable">
+                    <div class="badge badge-fem">Alterna Femenina</div>
+                    <div class="product-img img-grande"><img src="imagenes/camiseta_azul_mujer.jpg" alt="Camiseta Azul Mujer"></div>
+                    <h3>Camiseta Alterna Azul 2026 (Mujer)</h3>
+                    <div class="product-price">25 $</div>
+                    <span class="view-more-text"><i class="fas fa-search-plus"></i> Ver Escudo y Espalda</span>
+                </label>
+
+                <label for="det-m-blanca" class="product-card clickable">
+                    <div class="badge badge-fem">Especial Femenina</div>
+                    <div class="product-img img-grande"><img src="imagenes/camiseta_blanca_mujer.jpg" alt="Camiseta Blanca Mujer"></div>
+                    <h3>Camiseta Especial Blanca 2026 (Mujer)</h3>
+                    <div class="product-price">25 $</div>
+                    <span class="view-more-text"><i class="fas fa-search-plus"></i> Ver Escudo y Espalda</span>
+                </label>
+
+                <label for="det-m-negra" class="product-card clickable">
+                    <div class="badge badge-fem">Exclusiva Femenina</div>
+                    <div class="product-img img-grande"><img src="imagenes/camiseta_negra_mujer.jpg" alt="Camiseta Negra Mujer"></div>
+                    <h3>Camiseta Alterna Negra 2026 (Mujer)</h3>
+                    <div class="product-price">25 $</div>
+                    <span class="view-more-text"><i class="fas fa-search-plus"></i> Ver Escudo y Espalda</span>
+                </label>
+            </div>
+        </section>
+
+        <section class="content-section" id="sec-todos">
+            <h2>Todos los Productos</h2>
+            <p class="flip-hint-text">
+                <i class="fas fa-sync-alt"></i> Pasa el cursor sobre la imagen para ver la espalda
+            </p>
+            <div class="product-grid">
+                
+                <div class="product-card card-flip-container">
+                    <div class="card-inner">
+                        <div class="card-front"><img src="imagenes/camiseta_amarilla.jpg" alt="Camiseta Amarilla"></div>
+                        <div class="card-back"><img src="imagenes/espalda_amarilla.jpg" alt="Espalda Amarilla"></div>
+                    </div>
+                    <h3>Camiseta Amarilla (Hombre)</h3>
+                    <div class="product-price">25 $</div>
+                </div>
+
+                <div class="product-card card-flip-container">
+                    <div class="card-inner">
+                        <div class="card-front"><img src="imagenes/camiseta_azul.jpg" alt="Camiseta Azul"></div>
+                        <div class="card-back"><img src="imagenes/espalda_azul.jpg" alt="Espalda Azul"></div>
+                    </div>
+                    <h3>Camiseta Azul (Hombre)</h3>
+                    <div class="product-price">25 $</div>
+                </div>
+
+                <div class="product-card card-flip-container">
+                    <div class="card-inner">
+                        <div class="card-front"><img src="imagenes/camiseta_blanca.jpg" alt="Camiseta Blanca"></div>
+                        <div class="card-back"><img src="imagenes/espalda_blanca.jpg" alt="Espalda Blanca"></div>
+                    </div>
+                    <h3>Camiseta Blanca (Hombre)</h3>
+                    <div class="product-price">25 $</div>
+                </div>
+
+                <div class="product-card card-flip-container">
+                    <div class="card-inner">
+                        <div class="card-front"><img src="imagenes/camiseta_negra.jpg" alt="Camiseta Negra"></div>
+                        <div class="card-back"><img src="imagenes/espalda_negra.jpg" alt="Espalda Negra"></div>
+                    </div>
+                    <h3>Camiseta Negra (Hombre)</h3>
+                    <div class="product-price">25 $</div>
+                </div>
+
+                <div class="product-card card-flip-container">
+                    <div class="card-inner">
+                        <div class="card-front"><img src="imagenes/camiseta_amarilla_mujer.jpg" alt="Camiseta Amarilla Mujer"></div>
+                        <div class="card-back"><img src="imagenes/espalda_amarilla_mujer.jpg" alt="Espalda Amarilla Mujer"></div>
+                    </div>
+                    <h3>Camiseta Amarilla (Mujer)</h3>
+                    <div class="product-price">25 $</div>
+                </div>
+
+                <div class="product-card card-flip-container">
+                    <div class="card-inner">
+                        <div class="card-front"><img src="imagenes/camiseta_azul_mujer.jpg" alt="Camiseta Azul Mujer"></div>
+                        <div class="card-back"><img src="imagenes/espalda_azul_mujer.jpg" alt="Espalda Azul Mujer"></div>
+                    </div>
+                    <h3>Camiseta Azul (Mujer)</h3>
+                    <div class="product-price">25 $</div>
+                </div>
+
+                <div class="product-card card-flip-container">
+                    <div class="card-inner">
+                        <div class="card-front"><img src="imagenes/camiseta_blanca_mujer.jpg" alt="Camiseta Blanca Mujer"></div>
+                        <div class="card-back"><img src="imagenes/espalda_blanca_mujer.jpg" alt="Espalda Blanca Mujer"></div>
+                    </div>
+                    <h3>Camiseta Blanca (Mujer)</h3>
+                    <div class="product-price">25 $</div>
+                </div>
+
+                <div class="product-card card-flip-container">
+                    <div class="card-inner">
+                        <div class="card-front"><img src="imagenes/camiseta_negra_mujer.jpg" alt="Camiseta Negra Mujer"></div>
+                        <div class="card-back"><img src="imagenes/espalda_negra_mujer.jpg" alt="Espalda Negra Mujer"></div>
+                    </div>
+                    <h3>Camiseta Negra (Mujer)</h3>
+                    <div class="product-price">25 $</div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="content-section" id="sec-tallas">
+            <h2>Guía Explicativa de Tallas</h2>
+            <p class="tallas-hint">Usa una cinta métrica sobre tu pecho para asegurar el ajuste perfecto.</p>
+            
+            <table class="tallas-table">
+                <thead>
+                    <tr><th>Talla</th><th>Pecho (cm)</th><th>Largo (cm)</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>XS</td><td>84 - 89</td><td>68</td></tr>
+                    <tr><td>S</td><td>90 - 95</td><td>70</td></tr>
+                    <tr><td>M</td><td>96 - 101</td><td>72</td></tr>
+                    <tr><td>L</td><td>102 - 107</td><td>74</td></tr>
+                    <tr><td>XL</td><td>108 - 114</td><td>77</td></tr>
+                </tbody>
+            </table>
+
+            <div class="tallas-imagenes-contenedor-centrado">
+                <div class="tallas-img-card">
+                    <input type="checkbox" id="zoom-tallas" class="zoom-trigger">
+                    <label for="zoom-tallas" class="zoom-label">
+                        <img src="imagenes/tallas.jpg" alt="Tabla de Tallas Detallada">
+                        <div class="zoom-overlay-hint"><i class="fas fa-search-plus"></i> Click para Ampliar</div>
+                    </label>
+                    <h4>tallas</h4>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section" id="sec-ofertas">
+            <h2>Grandes Ofertas Especiales</h2>
+            <p class="promo-text-subtitle">Aprovecha nuestros descuentos al por mayor. ¡Arma tu combo!</p>
+            
+            <div class="product-grid grid-2x2">
+                <label for="det-of-amarilla" class="product-card clickable card-oferta-style">
+                    <div class="badge badge-promo">Mega Oferta</div>
+                    <div class="product-img img-grande"><img src="imagenes/camiseta_amarilla.jpg" alt="Camiseta Amarilla Promo"></div>
+                    <h3>Combo Camisetas Amarillas</h3>
+                    <div class="oferta-price-tag">A partir de 3 a <span>20 $ c/u</span></div>
+                    <span class="view-more-text"><i class="fas fa-gift"></i> Ver Promoción Especial</span>
+                </label>
+
+                <label for="det-of-azul" class="product-card clickable card-oferta-style">
+                    <div class="badge badge-promo">Mega Oferta</div>
+                    <div class="product-img img-grande"><img src="imagenes/camiseta_azul.jpg" alt="Camiseta Azul Promo"></div>
+                    <h3>Combo Camisetas Azules</h3>
+                    <div class="oferta-price-tag">A partir de 3 a <span>20 $ c/u</span></div>
+                    <span class="view-more-text"><i class="fas fa-gift"></i> Ver Promoción Especial</span>
+                </label>
+
+                <label for="det-of-blanca" class="product-card clickable card-oferta-style">
+                    <div class="badge badge-promo">Mega Oferta</div>
+                    <div class="product-img img-grande"><img src="imagenes/camiseta_blanca.jpg" alt="Camiseta Blanca Promo"></div>
+                    <h3>Combo Camisetas Blancas</h3>
+                    <div class="oferta-price-tag">A partir de 3 a <span>20 $ c/u</span></div>
+                    <span class="view-more-text"><i class="fas fa-gift"></i> Ver Promoción Especial</span>
+                </label>
+
+                <label for="det-of-negra" class="product-card clickable card-oferta-style">
+                    <div class="badge badge-promo">Mega Oferta</div>
+                    <div class="product-img img-grande"><img src="imagenes/camiseta_negra.jpg" alt="Camiseta Negra Promo"></div>
+                    <h3>Combo Camisetas Negras</h3>
+                    <div class="oferta-price-tag">A partir de 3 a <span>20 $ c/u</span></div>
+                    <span class="view-more-text"><i class="fas fa-gift"></i> Ver Promoción Especial</span>
+                </label>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-statement">
+            "¡LA PIEL DE TU PAÍS NO SE COMPRA TODOS LOS DÍAS, SE LLEVA EN EL CORAZÓN PARA SIEMPRE! APÓYALOS CON LA OFICIAL."
+        </div>
+        
+        <div class="footer-socials">
+            <h4>Contáctanos</h4>
+            <div class="social-icons">
+                <a href="https://wa.me/593983907581?text=Hola!%20Estoy%20interesado%20en%20las%20camisetas%20de%20Ecuador%20del%20Mundial" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/jhipstore?igsh=MWFqaGpoNTg2Z21vdQ==" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@jhip.store?_r=1&_t=ZS-96xd7yQnXFN" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.facebook.com/share/1F8QwjSgKr/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+
+        <p class="copyright">&copy; 2026 Jhip's store - Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
